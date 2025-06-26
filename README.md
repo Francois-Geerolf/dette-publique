@@ -22,7 +22,7 @@ Le dépôt contient de quoi répliquer les figures et les données de la [note e
 
 ![Figure 3](figure3b.png)
 
-### Table 1 : En 2023, une diminution du ratio Dette/PIB malgré un déficit à 5.5% du PIB 
+### Table 1 : En 2024, une hausse de 3.4% du PIB du ratio dette/PIB malgré un déficit à 5.8% du PIB 
 
 [Code R](table1.R)
 
