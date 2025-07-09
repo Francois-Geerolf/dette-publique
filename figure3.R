@@ -1,11 +1,11 @@
 
 library(tidyverse)
 
-load("figure2.rds")
+load("data.rds")
 
 
 
-figure2 |>
+data |>
   transmute(date = as.Date(paste0(year, "-01-01")),
             `Solde public (% du PIB)` = deficit_PIB/100,
             `Solde public corrigé de la « taxe inflationniste » (% du PIB)` = deficit_PIB/100+taxe_inflationniste/PIB) |>
@@ -31,7 +31,7 @@ ggsave("figure3.pdf", width = 1.25*6, height = 1.25*3.375)
 
 
 
-figure2 |>
+data |>
   transmute(date = as.Date(paste0(year, "-01-01")),
             `Déficit public (% du PIB)` = -deficit_PIB/100,
             `Déficit public corrigé de la « taxe inflationniste » (% du PIB)` = -deficit_PIB/100-taxe_inflationniste/PIB) |>

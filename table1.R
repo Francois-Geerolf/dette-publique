@@ -1,6 +1,6 @@
 
 library(tidyverse)
-load("figure2.rds")
+load("data.rds")
 
 year1 <- 2023
 year2 <- 2024
@@ -8,7 +8,7 @@ year2 <- 2024
 year1p <- paste0(year1)
 year2p <- paste0(year2)
 
-donnees <- figure2 %>%
+donnees <- data %>%
   filter(year >= year1) %>%
   select(-year) %>%
   t() 
