@@ -16,6 +16,14 @@ Le dépôt contient de quoi répliquer les figures et les données de la [note e
 
 ![Figure 2](figure2.png)
 
+
+
+### Figure 2b : Charge d'intérêt vs. charge d'intérêt réelle (Md€)
+
+[Code R](figure2b.R)
+
+![Figure 2b](figure2b.png)
+
 ### Figure 3 : Déficit public et déficit public corrigé de la « taxe inflationniste » (% du PIB)
 
 [Code R](figure3.R)
