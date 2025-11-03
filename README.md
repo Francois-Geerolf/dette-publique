@@ -2,8 +2,6 @@
 
 ## Réplication
 
-Le dépôt contient de quoi répliquer les figures et les données de la [note en lien](https://fgeerolf.com/dette-publique.html):
-
 ### Figure 1 : Excédents primaires ou effet boule de neige ?
 
 [Code R](figure1.R)
