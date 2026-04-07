@@ -25,7 +25,7 @@ plot_df <- data %>%
 
 last_points <- plot_df %>%
   group_by(variable) %>%
-  slice_max(date, n = 1, with_ties = FALSE) %>%
+  filter(date == as.Date("2023-01-01")) %>%
   ungroup() %>%
   mutate(label = label_percent(accuracy = 0.1)(value))
 
