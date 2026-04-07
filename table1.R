@@ -2,16 +2,16 @@
 library(tidyverse)
 load("data.rds")
 
-year1 <- 2023
-year2 <- 2024
+year1 <- 2022
+year2 <- 2023
 
 year1p <- paste0(year1)
 year2p <- paste0(year2)
 
 donnees <- data %>%
-  filter(year >= year1) %>%
+  filter(year >= year1, year <= year2) %>%
   select(-year) %>%
-  t() 
+  t()
 
 colnames(donnees) <- c(year1p, year2p)
 

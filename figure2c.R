@@ -19,14 +19,14 @@ plot_df <- data %>%
   mutate(
     variable = factor(
       variable,
-      levels = c("Charge d'intérêts nominale (Md€)", "Charge d'intérêts réelle (Md€)")
+      levels = c("Taxe inflationniste (Md€)", "Charge d'intérêts nominale (Md€)", "Charge d'intérêts réelle (Md€)")
     )
   )
 
 # Keep last points for end labels
 last_pts <- plot_df %>%
   group_by(variable) %>%
-  filter(date == max(date, na.rm = TRUE)) %>%
+  filter(date == as.Date("2023-01-01")) %>%
   ungroup() %>%
   mutate(label = paste0(number(value, accuracy = 1, big.mark = " ", decimal.mark = ","), " Md€"))
 
